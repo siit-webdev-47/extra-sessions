@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Dynamic UI</h1>
+    <div>
+        Use arrow keys to move the charcter on the screen
+    </div>
+    
+    <div class="container">
+        <div id="character-1" class="character character-pig" title="Ghiță" onclick="selectCharacter(event)"></div>
+        <div id="character-2" class="character character-cat" title="Cleo" onclick="selectCharacter(event)"></div>
+        <div id="character-3" class="character character-pig" title="Romeo" onclick="selectCharacter(event)"></div>
+        <div id="character-4" class="character character-giraffe" title="Annabelle" onclick="selectCharacter(event)"></div>
+    </div>
+
+    <div class="move">
+        <button onclick="moveLeft()">move left</button>
+        <button onclick="moveRight()">move right</button>
+    </div>
+</body>
+</html>

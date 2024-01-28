@@ -1,0 +1,37 @@
+.container {
+    background-color: lightblue;
+    border: 1px solid teal;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    height: 50vh;
+    position: relative;
+}
+
+.move {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.character {
+    background-color: yellow;
+    width: 5rem;
+    aspect-ratio: 1;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.character-pig {
+    background-image: url('imgs/pig.svg');
+}
+
+.character-cat {
+    background-image: url('imgs/cat.svg');
+}
+
+.character-giraffe {
+    background-image: url('imgs/giraffe.svg');
+}
