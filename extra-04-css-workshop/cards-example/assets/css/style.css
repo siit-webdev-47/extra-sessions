@@ -1,4 +1,4 @@
-/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=16015,16017,16020,16021');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 body{
@@ -14,7 +14,7 @@ body{
     height: 30rem;
     width: 20rem;
     border: 1px solid;
-    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", "Raleway", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
 }
 
