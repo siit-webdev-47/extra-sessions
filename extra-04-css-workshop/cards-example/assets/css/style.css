@@ -1,21 +1,32 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=16015,16017,16020,16021');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-body{
-    font-size: 1.5rem;
+:root{
+    --color-1:#25b5f1;
+    --color-2: #fff;
+    --border-color-1: #5555553d;
+    --card-1-height: 50rem;
+    --card-1-width: 30rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", "Raleway", Helvetica, Arial, sans-serif;
 }
 
 .cards-section-1 {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 1rem;
 }
 
 .card-1 {
-    height: 30rem;
-    width: 20rem;
-    border: 1px solid;
-    font-family: "Helvetica Neue", "Raleway", Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+    height: var(--card-1-height);
+    width: var(--card-1-width);
+    border-bottom: 1px solid var(--color-1);
 }
 
 .card-1-header {
@@ -24,15 +35,73 @@ body{
     background-position: center;
 }
 
-.card-1:nth-child(2n+1) .card-1-header{
+.card-1:nth-child(3n) .card-1-header {
     background-image: url('../imgs/post_01.jpg');
 }
 
-.card-1:nth-child(2n) .card-1-header{
+.card-1:nth-child(3n + 1) .card-1-header {
     background-image: url('../imgs/post_02.jpg');
+}
+
+.card-1:nth-child(3n + 2) .card-1-header {
+    background-image: url('../imgs/post_03.jpg');
 }
 
 .card-1-body {
     height: 60%;
+    /* padding: 1rem 0 ; */
+    padding-left: 1rem;
+}
+
+.card-body-content {
+    position: relative;
+    margin-top: -4rem;
+    padding: 0.5rem;
+    height: 100%;
+    background-color: var(--color-2);
+}
+
+.info {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid var(--border-color-1);
+    line-height: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.info .date {
+    font-size: 0.95rem;
+}
+
+.info .comments {
+    font-size: 0.75rem;
+}
+
+.info .comments span {
+    padding-left: 0.5rem;
+}
+
+.card-body-content p {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+.btn-1 {
+    background-color: var(--color-1);
+    border: 0;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.content{
     padding: 1rem;
+}
+
+.card-body-content:hover {
+    box-shadow:  0px 10px 6px 4px #d8d8d8;
 }
