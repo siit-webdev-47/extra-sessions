@@ -1,0 +1,29 @@
+.box-1{
+    border: 2px solid grey;
+    height: 3rem;
+    width: 6rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.box-2{
+    border: 2px solid magenta;
+    height: 3rem;
+    width: 6rem;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box-2:hover{
+    background-color: mediumorchid;
+}
+
+
+#operation-panel{
+    display: flex;
+}
+
+#answers-panel{
+    display: flex;
+}
