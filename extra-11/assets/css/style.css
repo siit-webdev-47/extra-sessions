@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+}
+
+#menu {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#new-round {
+    background-color: blueviolet;
+    color: yellow;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(33, 2, 61);
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#new-round:hover {
+    background-color: rgba(139, 0, 139, 0.80);
+}
+
+.player-v2{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.player-avatar{
+    border: 3px solid grey;
+    width: 5rem;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.player-avatar img{
+    width: 3rem;
+}
+
+.player-avatar h2{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.player-bar{
+    margin: 0 1rem;
+    border-radius: 5px;
+}
+
+.player-score{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.player-score span{
+    margin-right: 0.2rem;
+}
