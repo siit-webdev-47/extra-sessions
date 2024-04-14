@@ -31,7 +31,7 @@ function newRound(){
 }
 
 function playerRound(playerModel, playerView){
-    co
-    playerModel.updateScore(diceRoll);nst diceRoll = Math.floor(Math.random() * 6) + 1;
+    const diceRoll = Math.floor(Math.random() * 6) + 1;
+    playerModel.updateScore(diceRoll);
     playerView.renderScore();
 }
